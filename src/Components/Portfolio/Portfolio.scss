@@ -1,0 +1,46 @@
+.portfolio {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 100px;
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  &__tab {
+    cursor: pointer;
+    background-color: #2da8d8;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+  }
+  &__tab:hover {
+    background-color: #d9514eff;
+  }
+}
+
+.portfolio {
+  &__text {
+    padding-bottom: 50px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: block;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+  }
+}
