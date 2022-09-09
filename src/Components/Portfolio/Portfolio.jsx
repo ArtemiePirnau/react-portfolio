@@ -42,7 +42,7 @@ const Portfolio = () => {
               {dataWebsites.map((item) => {
                 return <PortfolioItem key={item.id} item={item} />;
               })}
-            </div>2
+            </div>
             <div className="portfolio__items mix apps">
               {dataApps.map((item) => {
                 return <PortfolioItem key={item.id} item={item} />;
