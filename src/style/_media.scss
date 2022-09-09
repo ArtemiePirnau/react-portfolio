@@ -167,6 +167,9 @@
   // }
 }
 @media (max-width: 410px) {
+  .footer__item {
+    margin: 0 20px;
+  }
   .contacts__item-link {
     font-size: 18px;
   }
