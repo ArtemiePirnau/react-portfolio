@@ -7,11 +7,10 @@ const Contacts = () => {
       <div className="container">
         <div className="contacts__inner">
           <div className="contacts__box">
-            <h3 className="contacts__title">Contact Me</h3>
+            <h3 className="contacts__title">HAVE SOME QUESTIONS ?</h3>
             <p className="contacts__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-              quasi expedita iure ex officia nulla cupiditate quis earum beatae
-              a!
+              If you have questions, proposals, opinions, or simply want to
+              discuss. Contact me! Do not be shy
             </p>
             <ul className="contacts__list">
               <li className="contacts__item">
@@ -38,20 +37,12 @@ const Contacts = () => {
             </ul>
           </div>
           <form className="contacts__form">
-            <div className="contacts__form-inputs">
-              <input
-                className="contacts__input contacts__name"
-                type="text"
-                name="username"
-                placeholder="Name"
-              />
-              <input
-                className="contacts__input contacts__email"
-                type="text"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
+            <input
+              className="contacts__input contacts__email"
+              type="text"
+              name="email"
+              placeholder="Email"
+            />
             <textarea
               className="contacts__form-area"
               name="area"

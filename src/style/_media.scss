@@ -114,14 +114,15 @@
   }
 }
 @media (max-width: 580px) {
+  .contacts__title {
+    font-size: 32px;
+    line-height: 52px;
+  }
   .portfolio__text {
     padding-bottom: 0;
   }
   .contacts__form-inputs {
     flex-wrap: wrap;
-  }
-  .contacts__input {
-    width: 100%;
   }
   .section-title {
     line-height: 30px;
@@ -149,6 +150,10 @@
   }
 }
 @media (max-width: 520px) {
+  .contacts__title {
+    font-size: 24px;
+    line-height: 46px;
+  }
   .footer__item {
     margin: 0 30px;
   }
@@ -168,8 +173,8 @@
     width: 100%;
   }
   .contacts__title {
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 20px;
+    line-height: 38px;
   }
   .contacts__text {
     font-size: 16px;

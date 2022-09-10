@@ -34,7 +34,8 @@ const MySkills = () => {
             <SkillsItem text="photoshop" num="80%" width="80" color="#31a8ff" />
             <SkillsItem text="figma" num="90%" width="90" color="#a259ff" />
             <SkillsItem text="gulp" num="80%" width="80" color="#eb4a4b" />
-            <SkillsItem text="webpack" num="70%" width="70" color="#1c78c0" />
+            <SkillsItem text="webpack" num="80%" width="80" color="#1c78c0" />
+            <SkillsItem text="react / redux" num="85%" width="85" color="#61dbfb" />
           </ul>
         </div>
       </div>
