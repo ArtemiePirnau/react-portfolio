@@ -1,19 +1,32 @@
 import emailJs from "emailjs-com";
 import gmail from "./gmail.png";
 import call from "./call.png";
+import { useState } from "react";
 
 const Contacts = () => {
+  const [nameInput, setNameInput] = useState("");
+  const [emailInput, setEmailInput] = useState("");
+  const [textarea, setTextarea] = useState("");
+
+  const isValidEmail = (email) => {
+    return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailJs
-      .sendForm(
+    if (!isValidEmail(emailInput)) {
+      return;
+    } else {
+      emailJs.sendForm(
         "service_nzkph6l",
         "template_x0vs1kf",
         e.target,
         "xgijVq2r87h4rs0Vu"
-      )
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      );
+      setNameInput("");
+      setEmailInput("");
+      setTextarea("");
+    }
   };
   return (
     <section className="contacts">
@@ -56,18 +69,24 @@ const Contacts = () => {
                 type="text"
                 name="name"
                 placeholder="Name"
+                value={nameInput}
+                onChange={(e) => setNameInput(e.target.value)}
               />
               <input
                 className="contacts__input contacts__email"
                 type="text"
                 name="user_email"
                 placeholder="Email"
+                value={emailInput}
+                onChange={(e) => setEmailInput(e.target.value)}
               />
             </div>
             <textarea
               className="contacts__form-area"
               name="area"
               placeholder="Message"
+              value={textarea}
+              onChange={(e) => setTextarea(e.target.value)}
             ></textarea>
             <button className="contacts__btn" type="submit">
               Submit
