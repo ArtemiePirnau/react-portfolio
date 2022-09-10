@@ -1,7 +1,20 @@
+import emailJs from "emailjs-com";
 import gmail from "./gmail.png";
 import call from "./call.png";
 
 const Contacts = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailJs
+      .sendForm(
+        "service_nzkph6l",
+        "template_x0vs1kf",
+        e.target,
+        "xgijVq2r87h4rs0Vu"
+      )
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
   return (
     <section className="contacts">
       <div className="container">
@@ -36,13 +49,21 @@ const Contacts = () => {
               </li>
             </ul>
           </div>
-          <form className="contacts__form">
-            <input
-              className="contacts__input contacts__email"
-              type="text"
-              name="email"
-              placeholder="Email"
-            />
+          <form className="contacts__form" onSubmit={sendEmail}>
+            <div className="contacts__form-inputs">
+              <input
+                className="contacts__input contacts__email"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <input
+                className="contacts__input contacts__email"
+                type="text"
+                name="user_email"
+                placeholder="Email"
+              />
+            </div>
             <textarea
               className="contacts__form-area"
               name="area"

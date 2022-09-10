@@ -352,8 +352,12 @@
     width: 50%;
     margin-left: 10px;
   }
+  &__form-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
   &__input {
-    width: 100%;
+    width: 45%;
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 5px;
