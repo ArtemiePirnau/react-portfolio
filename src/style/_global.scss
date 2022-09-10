@@ -55,7 +55,11 @@ h6 {
 button {
   padding: 0;
 }
-
+button,
+input,
+textarea {
+  font-family: "Work Sans", sans-serif;
+}
 .container {
   max-width: 1520px;
   margin: 0 auto;
