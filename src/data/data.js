@@ -1,4 +1,3 @@
-// Websites
 const dataWebsites = [
   {
     id: 1,
@@ -81,7 +80,6 @@ const dataWebsites = [
     link: "https://artemiepirnau.github.io/mars-travel-landing/dist/",
   },
 ];
-// Apps (JS)
 const dataApps = [
   {
     id: 7,
@@ -125,7 +123,6 @@ const dataApps = [
   },
 ];
 
-// Apps (React.js)
 const dataReact = [
   {
     id: 19,

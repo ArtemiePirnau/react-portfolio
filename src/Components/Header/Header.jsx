@@ -3,7 +3,6 @@ import { useState } from "react";
 import Type from "./Type.jsx";
 import icon from "../../../public/logo.png";
 import "../../style/_global.scss";
-//import "./Header.scss";
 
 const Header = () => {
   const [isActive, setIsActive] = useState("");
@@ -42,7 +41,6 @@ const Header = () => {
             <div className="header__about">
               <Type />
               <div className="header__about-buttons">
-                {/* <button className="header__about-btn">Contact me</button> */}
                 <a className="header__about-btn header__resume" href="#">
                   View resume
                 </a>

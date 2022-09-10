@@ -1,5 +1,4 @@
 import SkillsItem from "../SkillsItem/SkillsItem.jsx";
-//import "./MySkills.scss";
 const MySkills = () => {
   return (
     <section className="skills text">
@@ -36,106 +35,6 @@ const MySkills = () => {
             <SkillsItem text="figma" num="90%" width="90" color="#a259ff" />
             <SkillsItem text="gulp" num="80%" width="80" color="#eb4a4b" />
             <SkillsItem text="webpack" num="70%" width="70" color="#1c78c0" />
-            {/* <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">HTML5</p>
-                <p className="skills__item-num">90%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "90%", backgroundColor: "#fa3800" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">CSS3 / BEM</p>
-                <p className="skills__item-num">90%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "90%", backgroundColor: "#0f4aef" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">SASS/SCSS</p>
-                <p className="skills__item-num">85%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "85%", backgroundColor: "#ce679a" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">GIT</p>
-                <p className="skills__item-num">70%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "70%", backgroundColor: "#f05030" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">javascript (es6+)</p>
-                <p className="skills__item-num">85%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "85%", backgroundColor: "#f7e018" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">jquery</p>
-                <p className="skills__item-num">80%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "80%", backgroundColor: "#0967ac" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">photoshop</p>
-                <p className="skills__item-num">80%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "80%", backgroundColor: "#31a8ff" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">figma</p>
-                <p className="skills__item-num">90%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "90%", backgroundColor: "#a259ff" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">gulp</p>
-                <p className="skills__item-num">80%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "80%", backgroundColor: "#eb4a4b" }}
-              ></div>
-            </li>
-            <li className="skills__item">
-              <div className="skills__item-content">
-                <p className="skills__item-text">webpack</p>
-                <p className="skills__item-num">70%</p>
-              </div>
-              <div
-                className="skills__item-line"
-                style={{ width: "70%", backgroundColor: "#1c78c0" }}
-              ></div>
-            </li> */}
           </ul>
         </div>
       </div>

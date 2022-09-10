@@ -2,7 +2,7 @@ import mixitup from "mixitup";
 import { useEffect } from "react";
 import { dataApps, dataWebsites, dataReact } from "../../data/data.js";
 import PortfolioItem from "../PortfolioItem/PortfolioItem.jsx";
-//import "./Portfolio.scss";
+
 const Portfolio = () => {
   useEffect(() => {
     mixitup(".portfolio__items-wrapper", {
@@ -14,6 +14,7 @@ const Portfolio = () => {
       },
     });
   }, []);
+  
   return (
     <section className="portfolio text">
       <div className="container">

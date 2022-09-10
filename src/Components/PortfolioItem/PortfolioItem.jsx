@@ -1,5 +1,4 @@
 const PortfolioItem = ({ id, item }) => {
-  //console.log(id);
   return (
     <a
       key={id}

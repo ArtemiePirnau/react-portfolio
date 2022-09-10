@@ -1,5 +1,3 @@
-import "./SkillsItem.scss";
-
 const SkillsItem = ({ text, num, width, color }) => {
   return (
     <li className="skills__item">

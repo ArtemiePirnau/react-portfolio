@@ -1,5 +1,4 @@
 import img from "./me.jpg";
-//import "./About.scss";
 
 const About = () => {
   return (
