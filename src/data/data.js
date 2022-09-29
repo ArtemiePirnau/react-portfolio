@@ -79,6 +79,16 @@ const dataWebsites = [
     img: "https://user-images.githubusercontent.com/92051961/189174230-20b1345b-2b8f-4973-bb3d-9919500fcdf8.png",
     link: "https://artemiepirnau.github.io/mars-travel-landing/dist/",
   },
+  {
+    id: 28,
+    img: "https://user-images.githubusercontent.com/92051961/190860790-dd698c53-73d7-42ee-a463-fe643e03577d.png",
+    link: "https://artemiepirnau.github.io/autoprokat-landing/dist/",
+  },
+  {
+    id: 29,
+    img: "https://user-images.githubusercontent.com/92051961/190860797-a72c86b4-48a4-46d4-8883-b8e22f7c8879.png",
+    link: "https://artemiepirnau.github.io/autoprokat-landing/dist/product.html",
+  },
 ];
 const dataApps = [
   {
@@ -121,6 +131,11 @@ const dataApps = [
     img: "https://user-images.githubusercontent.com/92051961/189158317-beefa62a-8111-43a5-9d1e-84b06e0a0045.png",
     link: "https://github.com/ArtemiePirnau/marvel-api",
   },
+  {
+    id: 30,
+    img: "https://user-images.githubusercontent.com/92051961/190911741-22bf51c9-c428-42ca-a91e-6289d560b707.png",
+    link: "https://artemiepirnau.github.io/google-clone/dist/",
+  },
 ];
 
 const dataReact = [
@@ -148,6 +163,11 @@ const dataReact = [
     id: 29,
     img: "https://user-images.githubusercontent.com/92051961/189161616-b10804c9-9894-4f72-b9a8-bcda1c01670e.png",
     link: "https://github.com/ArtemiePirnau/react-pokemon-api",
+  },
+  {
+    id: 31,
+    img: "https://user-images.githubusercontent.com/92051961/193069300-6f9aa3a0-745c-4370-ac85-2f27d081405a.png",
+    link: "https://github.com/ArtemiePirnau/react-redux-posts",
   },
 ];
 export { dataApps, dataWebsites, dataReact };
