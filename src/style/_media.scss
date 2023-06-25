@@ -35,8 +35,14 @@
   .portfolio__text {
     padding-bottom: 30px;
   }
+
+  // .about {
+  //   padding-top: 100px;
+  // }
+  /// Sterge daca ceva
+
   .about {
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .about__inner {
     flex-direction: column;
@@ -111,6 +117,14 @@
   .contact-me__form-info {
     max-width: 100%;
     width: 100%;
+  }
+  /// Sterge daca ceva
+  .about {
+    padding-top: 0px;
+  }
+  .about-box__text {
+    margin-bottom: 10px;
+    line-height: 24px;
   }
 }
 @media (max-width: 580px) {
