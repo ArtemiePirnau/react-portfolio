@@ -1,11 +1,11 @@
-const PortfolioItem = ({ id, item }) => {
+const PortfolioItem = ({ id, img, link }) => {
   return (
     <a
       key={id}
       className="portfolio__item"
       target="_blank"
-      href={item.link}
-      style={{ backgroundImage: `url(${item.img})` }}
+      href={link}
+      style={{ backgroundImage: `url(${img})` }}
     ></a>
   );
 };

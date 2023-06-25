@@ -1,5 +1,7 @@
 import SkillsItem from "../SkillsItem/SkillsItem.jsx";
+import { useSelector } from "react-redux";
 const MySkills = () => {
+  const skills = useSelector((state) => state.skillsList.skillsList);
   return (
     <section className="skills text">
       <div className="container">
@@ -10,32 +12,17 @@ const MySkills = () => {
             experiences with all technologies are written below.
           </p>
           <ul className="skills__list">
-            <SkillsItem text="HTML5" num="90%" width="90" color="#fa3800" />
-            <SkillsItem
-              text="CSS3 / BEM"
-              num="90%"
-              width="90"
-              color="#0f4aef"
-            />
-            <SkillsItem
-              text="SASS / SCSS"
-              num="85%"
-              width="85"
-              color="#ce679a"
-            />
-            <SkillsItem text="Git" num="70%" width="70" color="#f05030" />
-            <SkillsItem
-              text="javascript (es6+)"
-              num="85%"
-              width="85"
-              color="#f7e018"
-            />
-            <SkillsItem text="jquery" num="80%" width="80" color="#0967ac" />
-            <SkillsItem text="photoshop" num="80%" width="80" color="#31a8ff" />
-            <SkillsItem text="figma" num="90%" width="90" color="#a259ff" />
-            <SkillsItem text="gulp" num="80%" width="80" color="#eb4a4b" />
-            <SkillsItem text="webpack" num="80%" width="80" color="#1c78c0" />
-            <SkillsItem text="react / redux" num="85%" width="85" color="#61dbfb" />
+            {skills.map(({ id, text, width, num, color }) => {
+              return (
+                <SkillsItem
+                  key={id}
+                  text={text}
+                  num={num}
+                  width={width}
+                  color={color}
+                />
+              );
+            })}
           </ul>
         </div>
       </div>

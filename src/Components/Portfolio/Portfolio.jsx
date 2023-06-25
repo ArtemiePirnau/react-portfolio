@@ -1,9 +1,12 @@
 import mixitup from "mixitup";
 import { useEffect } from "react";
-import { dataApps, dataWebsites, dataReact } from "../../data/data.js";
 import PortfolioItem from "../PortfolioItem/PortfolioItem.jsx";
+import { useSelector } from "react-redux";
 
 const Portfolio = () => {
+  const websites = useSelector((state) => state.websitesList.websitesList);
+  const jsApps = useSelector((state) => state.appsJsList.appsJsList);
+  const reactApps = useSelector((state) => state.appsReactList.reactList);
   useEffect(() => {
     mixitup(".portfolio__items-wrapper", {
       selectors: {
@@ -14,7 +17,7 @@ const Portfolio = () => {
       },
     });
   }, []);
-  
+
   return (
     <section className="portfolio text">
       <div className="container">
@@ -40,18 +43,18 @@ const Portfolio = () => {
           </div>
           <div className="portfolio__items-wrapper">
             <div className="portfolio__items mix websites">
-              {dataWebsites.map((item) => {
-                return <PortfolioItem key={item.id} item={item} />;
+              {websites.map(({ id, img, link }) => {
+                return <PortfolioItem key={id} link={link} img={img} />;
               })}
             </div>
             <div className="portfolio__items mix apps">
-              {dataApps.map((item) => {
-                return <PortfolioItem key={item.id} item={item} />;
+              {jsApps.map(({ id, img, link }) => {
+                return <PortfolioItem key={id} link={link} img={img} />;
               })}
             </div>
             <div className="portfolio__items mix react">
-              {dataReact.map((item) => {
-                return <PortfolioItem key={item.id} item={item} />;
+              {reactApps.map(({ id, img, link }) => {
+                return <PortfolioItem key={id} link={link} img={img} />;
               })}
             </div>
           </div>
