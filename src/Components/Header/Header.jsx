@@ -10,9 +10,10 @@ const Header = () => {
     setIsActive(!isActive);
     if (!isActive) {
       gsap.to(".about", 1, { clipPath: "circle(2500px at 100% -10%)" });
-      gsap.to("#root", 1, { overflow: "hidden" });
+      gsap.to(".body", 1, { overflow: "hidden" });
     } else {
       gsap.to(".about", 1, { clipPath: "circle(50px at 100% -10%)" });
+      gsap.to(".body", 1, { overflow: "auto" });
     }
   };
   return (
