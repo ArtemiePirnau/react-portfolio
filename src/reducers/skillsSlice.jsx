@@ -80,6 +80,13 @@ const skillsItemsSLice = createSlice({
         width: "85",
         color: "#61dbfb",
       },
+      {
+        id: 11,
+        text: "TypeScript",
+        num: "70%",
+        width: "70",
+        color: "#3178c6",
+      },
     ],
   },
 });
